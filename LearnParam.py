@@ -9,5 +9,4 @@ def readData(filename):
                 word = line.split(' ')
                 wordlist.append(str(word[0]))
                 taglist.append(str(word[1].replace('\n','')))
-    print(str(taglist))
-
+    return taglist,wordlist

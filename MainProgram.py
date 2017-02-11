@@ -4,4 +4,4 @@ import os
 import LearnParam as Lp
 
 os.system('cls')
-Lp.readData('pos.test.txt')
+tagList,wordList = Lp.readData('pos.train.txt')
