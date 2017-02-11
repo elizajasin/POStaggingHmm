@@ -1,4 +1,4 @@
-__author__ = 'elizajasin'
+__author__ = 'Eliza & Angky'
 
 def readData(filename):
     with open(filename,'r') as ins:
@@ -10,3 +10,4 @@ def readData(filename):
                 wordlist.append(str(word[0]))
                 taglist.append(str(word[1].replace('\n','')))
     print(str(taglist))
+
