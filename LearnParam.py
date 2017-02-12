@@ -9,13 +9,17 @@ def readData(filename):
         b.append(a)
     return b
 
-def transition(b,listTag):
-    c = {}
+def makeTagList(b):
+    listTag = set()
     for i,item in enumerate(b) :
         try:
             listTag.add(b[i][1])
         except :
             pass
+    return listTag
+
+def transition(b,listTag):
+    c = {}
     for item in listTag:
         c[item] = {}
         for item2 in listTag:
