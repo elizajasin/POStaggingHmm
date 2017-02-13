@@ -71,9 +71,9 @@ def emission(b,c,listTag):
                 e[item][item2] = e[item][item2] / jum
             else:
                 c[item][item2] = 0
-    # print("Emission Probabilities")
-    # for item in listTag:
-    #     for item2 in bagOfWords:
-    #         if e[item][item2] != 0:
-    #             print(item + " pada kata " + item2 + " : " + str.format('{0:.15f}', e[item][item2]))
+    print("Emission Probabilities")
+    for item in listTag:
+        for item2 in bagOfWords:
+            if e[item][item2] != 0:
+                print(item + " pada kata " + item2 + " : " + str.format('{0:.15f}', e[item][item2]))
     return e
